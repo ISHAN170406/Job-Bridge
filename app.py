@@ -9,8 +9,8 @@ min_commits = 1
 max_commits = 5
 
 # Total time span in a day (in seconds) to spread commits
-day_start = 2  # 9 AM
-day_end = 3   # 11 PM
+day_start = 9  # 9 AM
+day_end = 23   # 11 PM
 total_day_seconds = (day_end - day_start) * 3600
 
 def random_string():
@@ -43,8 +43,8 @@ def main():
 
 if __name__ == "__main__":
     # Optional: delay start of the script by 0–30 minutes
-    # startup_delay = random.randint(0, 1800)
-    # print(f"[~] Startup delay: {startup_delay} seconds")
-    # time.sleep(startup_delay)
+    startup_delay = random.randint(0, 1800)
+    print(f"[~] Startup delay: {startup_delay} seconds")
+    time.sleep(startup_delay)
 
     main()
